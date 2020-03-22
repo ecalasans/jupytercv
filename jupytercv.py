@@ -11,5 +11,8 @@ def imshow_grayscale(matImage):
     ax.imshow(rgb[:, :, 1], cmap='gray', interpolation='none', origin='upper')
 
     ax.xaxis.set_ticks_position('top')
+    ax.xaxis.set_label_position('top')
+    ax.set_xlabel('y')
+    ax.set_ylabel('x')
 
     plt.show()
